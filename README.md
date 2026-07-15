@@ -94,14 +94,18 @@ ai-github-projects-stats/
 ├── data/                           # 汇总数据
 │   ├── source-top-100-stars.md     # Top-100 原始榜单存档
 │   ├── top-100-stars.csv           # Top-100 结构化数据(含 category 列)
-│   └── projects.csv               # 36 个 AI 项目技术选型数据
+│   ├── projects.csv                # 36 个 AI 项目技术选型数据
+│   └── merged-ai-projects.csv      # 合并去重总表(56 个,18 字段)
 ├── projects/                       # 每个项目详细分析（一项目一文件）
 └── reports/                        # 统计报告
-    └── summary.md                 # 36 个 AI 项目技术选型统计
+    ├── summary.md                 # 36 个 AI 项目技术选型统计
+    └── merged-ai-projects.md      # 合并去重总表(56 个)展示
 ```
 
 ## 已有数据
 
+- **[`reports/merged-ai-projects.md`](reports/merged-ai-projects.md)**：**合并去重总表 56 个**（36 curated + Top-100 AI 子集 32，去重 12），含来源标注与待补清单。
+- **[`data/merged-ai-projects.csv`](data/merged-ai-projects.csv)**：合并去重结构化数据，18 字段（含 `source`/`rank_top100`）。
 - **[`reports/summary.md`](reports/summary.md)**：36 个知名 AI 项目技术选型统计（star / 主语言 / 前端 / 后端 / 数据库 / LLM / 协议），含分布图表与选型建议。
 - **[`data/top-100-stars.csv`](data/top-100-stars.csv)**：GitHub 全站历史总榜 Top-100，含 rank / stars / forks / language / category / description / last_commit。
 - **[`data/projects.csv`](data/projects.csv)**：36 个 AI 项目的 14 字段技术选型表。
