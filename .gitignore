@@ -1,0 +1,22 @@
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 环境 / 密钥（切勿提交）
+.env
+.env.*
+*.pem
+*.key
+secrets/
+
+# 数据缓存
+*.log
+node_modules/
+__pycache__/
+*.pyc
+.venv/
