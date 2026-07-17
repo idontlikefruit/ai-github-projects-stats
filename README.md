@@ -7,8 +7,8 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Projects](https://img.shields.io/badge/projects-136-blue.svg)
 ![Top100](https://img.shields.io/badge/Top--100_AI-32-orange.svg)
-![Stars](https://img.shields.io/github/stars/idontlikefruit/ai-github-projects-stats?style=social)
-![Last Commit](https://img.shields.io/github/last-commit/idontlikefruit/ai-github-projects-stats)
+![Stars](https://img.shields.io/github/stars/idontlikefruit/ai-vibe-pick?style=social)
+![Last Commit](https://img.shields.io/github/last-commit/idontlikefruit/ai-vibe-pick)
 ![Data](https://img.shields.io/badge/data%20as%20of-2026--07--16-brightgreen)
 
 </div>
@@ -315,7 +315,7 @@
 ## 📁 目录结构
 
 ```
-ai-github-projects-stats/
+ai-vibe-pick/
 ├── README.md                       # 本文件（GitHub 风格：徽章/TOC/折叠/全量元数据/Skill）
 ├── .claude/skills/tech-selection/  # AI 技术选型 Skill
 │   └── SKILL.md
