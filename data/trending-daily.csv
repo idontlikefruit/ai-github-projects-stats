@@ -1,4 +1,4 @@
-rank,full_name,name,description,language,stars_today,total_stars
+rank,full_name,name,description,language,stars_today,total_stars,ai_related,tags
 1,OpenCut-app/OpenCut,"
     
 
@@ -6,7 +6,7 @@ rank,full_name,name,description,language,stars_today,total_stars
       
         OpenCut-app /
 
-      OpenCut",The open-source CapCut alternative,TypeScript,"1,664",
+      OpenCut",The open-source CapCut alternative,TypeScript,"1,664",74149,否,"TypeScript, React, Canvas"
 2,Nutlope/hallmark,"
     
 
@@ -14,7 +14,7 @@ rank,full_name,name,description,language,stars_today,total_stars
       
         Nutlope /
 
-      hallmark","Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",CSS,"1,277",
+      hallmark","Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",CSS,"1,277",11086,是,"Claude Code, Cursor, 设计技能"
 3,mattpocock/skills,"
     
 
@@ -22,7 +22,7 @@ rank,full_name,name,description,language,stars_today,total_stars
       
         mattpocock /
 
-      skills",Skills for Real Engineers. Straight from my .claude directory.,Shell,"2,130",
+      skills",Skills for Real Engineers. Straight from my .claude directory.,Shell,"2,130",174452,是,"Shell, Claude Code"
 4,moeru-ai/airi,"
     
 
@@ -30,7 +30,7 @@ rank,full_name,name,description,language,stars_today,total_stars
       
         moeru-ai /
 
-      airi","💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",TypeScript,110,
+      airi","💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",TypeScript,110,42769,是,"TypeScript, Grok, 自托管"
 5,Dicklesworthstone/destructive_command_guard,"
     
 
@@ -38,7 +38,7 @@ rank,full_name,name,description,language,stars_today,total_stars
       
         Dicklesworthstone /
 
-      destructive_command_guard",The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.,Rust,471,
+      destructive_command_guard",The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.,Rust,471,5031,否,"Rust, 命令守卫"
 6,HKUDS/Vibe-Trading,"
     
 
@@ -46,7 +46,7 @@ rank,full_name,name,description,language,stars_today,total_stars
       
         HKUDS /
 
-      Vibe-Trading","""Vibe-Trading: Your Personal Trading Agent""",Python,915,
+      Vibe-Trading","""Vibe-Trading: Your Personal Trading Agent""",Python,915,24351,是,"Python, 交易 Agent"
 7,openinterpreter/openinterpreter,"
     
 
@@ -54,7 +54,7 @@ rank,full_name,name,description,language,stars_today,total_stars
       
         openinterpreter /
 
-      openinterpreter",A coding agent for low-cost models,Rust,299,
+      openinterpreter",A coding agent for low-cost models,Rust,299,66031,是,Rust
 8,HKUDS/DeepTutor,"
     
 
@@ -62,7 +62,7 @@ rank,full_name,name,description,language,stars_today,total_stars
       
         HKUDS /
 
-      DeepTutor",DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.,Python,172,
+      DeepTutor",DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.,Python,172,26952,是,"Python, 教育 Agent"
 9,HenryNdubuaku/maths-cs-ai-compendium,"
     
 
@@ -70,7 +70,7 @@ rank,full_name,name,description,language,stars_today,total_stars
       
         HenryNdubuaku /
 
-      maths-cs-ai-compendium",Become a cracked AI/ML Research Engineer,TypeScript,725,
+      maths-cs-ai-compendium",Become a cracked AI/ML Research Engineer,TypeScript,725,6275,是,"TypeScript, AI/ML 资料"
 10,injaneity/pi-computer-use,"
     
 
@@ -78,7 +78,7 @@ rank,full_name,name,description,language,stars_today,total_stars
       
         injaneity /
 
-      pi-computer-use",Let Pi control your apps on MacOS & Windows,TypeScript,103,
+      pi-computer-use",Let Pi control your apps on MacOS & Windows,TypeScript,103,1414,是,"TypeScript, Computer Use, macOS"
 11,Shubhamsaboo/awesome-llm-apps,"
     
 
@@ -86,7 +86,7 @@ rank,full_name,name,description,language,stars_today,total_stars
       
         Shubhamsaboo /
 
-      awesome-llm-apps","100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",Python,"1,236",
+      awesome-llm-apps","100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",Python,"1,236",123021,是,Python
 12,coreyhaines31/marketingskills,"
     
 
@@ -94,7 +94,7 @@ rank,full_name,name,description,language,stars_today,total_stars
       
         coreyhaines31 /
 
-      marketingskills","Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",JavaScript,340,
+      marketingskills","Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",JavaScript,340,40225,是,"JavaScript, Claude Code, 营销"
 13,YimMenu/YimMenuV2,"
     
 
@@ -102,7 +102,7 @@ rank,full_name,name,description,language,stars_today,total_stars
       
         YimMenu /
 
-      YimMenuV2",Experimental menu for GTA 5: Enhanced,C++,38,
+      YimMenuV2",Experimental menu for GTA 5: Enhanced,C++,38,1514,否,"C++, 游戏模组"
 14,hasaneyldrm/exercises-dataset,"
     
 
@@ -110,4 +110,4 @@ rank,full_name,name,description,language,stars_today,total_stars
       
         hasaneyldrm /
 
-      exercises-dataset","1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.",HTML,949,
+      exercises-dataset","1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.",HTML,949,15116,否,"HTML, 数据集"

@@ -5,7 +5,7 @@
 **统计 GitHub 知名 AI 项目的技术选型：类型 · 前后端 · 数据库 · LLM · 技术栈 tags**
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Projects](https://img.shields.io/badge/projects-56-blue.svg)
+![Projects](https://img.shields.io/badge/projects-136-blue.svg)
 ![Top100](https://img.shields.io/badge/Top--100_AI-32-orange.svg)
 ![Stars](https://img.shields.io/github/stars/idontlikefruit/ai-github-projects-stats?style=social)
 ![Last Commit](https://img.shields.io/github/last-commit/idontlikefruit/ai-github-projects-stats)
@@ -17,15 +17,42 @@
 
 ## 📑 目录
 
+- [🧭 AI 技术选型助手（Skill）](#-ai-技术选型助手skill)
 - [📊 全站历史总榜 Top-100 分析](#-全站历史总榜-top-100-分析)
 - [🔥 Trending 今日热榜产品分析](#-trending-今日热榜产品分析)
 - [🏷️ 技术栈 tags（新属性）](#️-技术栈-tags新属性)
-- [📋 全部项目元数据（56 个）](#-全部项目元数据56-个)
+- [📋 全部项目元数据（136 个）](#-全部项目元数据136-个)
 - [📁 目录结构](#-目录结构)
 - [📦 数据文件](#-数据文件)
 - [🗺️ 采集字段](#️-采集字段)
 - [📈 统计维度](#-统计维度)
 - [🔧 采集流程](#-采集流程)
+
+---
+
+## 🧭 AI 技术选型助手（Skill）
+
+> 告诉我你要做什么项目，我基于本仓库 **136 个真实 GitHub AI 项目** 的技术栈数据，给你一套有据可依的选型推荐（不凭空编造，每个推荐都引用真实项目）。
+
+### 怎么用
+
+**方式一（推荐）**：直接描述你的项目，例如：
+
+> 我要做一个企业内部知识库问答平台，需要 RAG + 工作流编排，自托管，团队熟 Python，预计支持多租户。帮我选型。
+
+我会自动调用 `tech-selection` skill，从 `data/projects-metadata.csv` 里筛同类项目（dify / langflow / FastGPT / Quivr …），给出「主语言 / 前端 / 后端 / 数据库 / LLM / 部署」推荐表 + 参考项目 + 替代方案 + 风险提示。
+
+**方式二**：显式触发 `/tech-selection`，再补充项目描述。
+
+### Skill 位置
+
+- 定义文件：[`.claude/skills/tech-selection/SKILL.md`](.claude/skills/tech-selection/SKILL.md)
+- 依赖数据：`data/projects-metadata.csv`（若不存在，先 `python3 scripts/upsert_metadata.py` 生成）
+- 默认经验基线（数据验证过）：
+  - LLM 应用平台 → `Next.js+React` / `Python(FastAPI/Flask)` / `PostgreSQL+Redis+向量库` / 多模型兼容 OpenAI（参考 dify、langflow、FastGPT、Flowise）
+  - AI 聊天前端 → `Next.js+React`(LobeHub) 或 `SvelteKit`(Open WebUI)
+  - 编程助手 → IDE 插件用 TypeScript(Continue)；自托管推理用 Rust(Tabby)；CLI 用 Python(Aider)
+  - 高性能/基础设施 → Rust/Go/C++（ollama / vLLM / llama.cpp / Qdrant）
 
 ---
 
@@ -57,7 +84,7 @@
 | C++ / Go | 各 5 | | |
 | HTML | 4 | | |
 
-<details>
+<details open>
 <summary><b>📎 展开查看全部 100 个项目（含 AI 相关标注 + 框架 tags）</b></summary>
 
 | 榜号 | 项目 | ⭐ Stars | 主语言 | AI 相关 | 框架 tags | 简介 |
@@ -179,22 +206,22 @@
 
 > 来源：https://github.com/trending （全语言 daily，无官方 API，抓取 HTML 解析）｜采集：2026-07-16 ｜ 数据：[`data/trending-daily.csv`](data/trending-daily.csv) · 完整分析：[`reports/trending-analysis.md`](reports/trending-analysis.md)
 
-| 今日⭐ | 项目 | 主语言 | 简介 |
-| ---: | :--- | :--- | :--- |
-| +2,130 | [mattpocock/skills](https://github.com/mattpocock/skills) | Shell | 工程师实战技能(取自 .claude 目录) |
-| +1,664 | [OpenCut-app/OpenCut](https://github.com/OpenCut-app/OpenCut) | TypeScript | 开源 CapCut 替代品 |
-| +1,277 | [Nutlope/hallmark](https://github.com/Nutlope/hallmark) | CSS | 反 AI-slop 设计技能(Claude Code/Cursor) |
-| +1,236 | [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | Python | 100+ 可运行 AI Agent & RAG 应用 |
-| +949 | [hasaneyldrm/exercises-dataset](https://github.com/hasaneyldrm/exercises-dataset) | HTML | 1324 项健身数据集 |
-| +915 | [HKUDS/Vibe-Trading](https://github.com/HKUDS/Vibe-Trading) | Python | 个人交易 Agent |
-| +725 | [HenryNdubuaku/maths-cs-ai-compendium](https://github.com/HenryNdubuaku/maths-cs-ai-compendium) | TypeScript | AI/ML 研究工程师进阶资料 |
-| +471 | [Dicklesworthstone/destructive_command_guard](https://github.com/Dicklesworthstone/destructive_command_guard) | Rust | 拦截危险命令的守卫 |
-| +340 | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | JavaScript | Claude Code/AI Agent 的营销技能 |
-| +299 | [OpenInterpreter/openinterpreter](https://github.com/OpenInterpreter/openinterpreter) | Rust | 面向低成本模型的编程 Agent |
-| +172 | [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | Python | 终身个性化 AI 导师 |
-| +110 | [moeru-ai/airi](https://github.com/moeru-ai/airi) | TypeScript | 自托管可拥有的 Grok 伴侣 |
-| +103 | [injaneity/pi-computer-use](https://github.com/injaneity/pi-computer-use) | TypeScript | 让 Pi 控制 macOS/Windows 应用 |
-| +38 | [YimMenu/YimMenuV2](https://github.com/YimMenu/YimMenuV2) | C++ | GTA5 增强版实验菜单 |
+| 今日 ⭐ | 项目 | ⭐ Stars | 主语言 | AI 相关 | 框架 tags | 简介 |
+| ---: | :--- | ---: | :--- | :---: | :--- | :--- |
+| +2,130 | [mattpocock/skills](https://github.com/mattpocock/skills) | 174,452 | Shell | 是 | Shell, Claude Code | Skills for Real Engineers. Straig… |
+| +1,664 | [OpenCut-app/OpenCut](https://github.com/OpenCut-app/OpenCut) | 74,149 | TypeScript | 否 | TypeScript, React, Canvas | The open-source CapCut alternative |
+| +1,277 | [Nutlope/hallmark](https://github.com/Nutlope/hallmark) | 11,086 | CSS | 是 | Claude Code, Cursor, 设计技能 | Anti-AI-slop design skill for Cla… |
+| +1,236 | [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | 123,021 | Python | 是 | Python | 100+ AI Agent & RAG apps you can … |
+| +949 | [hasaneyldrm/exercises-dataset](https://github.com/hasaneyldrm/exercises-dataset) | 15,116 | HTML | 否 | HTML, 数据集 | 1,324-exercise fitness dataset — … |
+| +915 | [HKUDS/Vibe-Trading](https://github.com/HKUDS/Vibe-Trading) | 24,351 | Python | 是 | Python, 交易 Agent | "Vibe-Trading: Your Personal Trad… |
+| +725 | [HenryNdubuaku/maths-cs-ai-compendium](https://github.com/HenryNdubuaku/maths-cs-ai-compendium) | 6,275 | TypeScript | 是 | TypeScript, AI/ML 资料 | Become a cracked AI/ML Research E… |
+| +471 | [Dicklesworthstone/destructive_command_guard](https://github.com/Dicklesworthstone/destructive_command_guard) | 5,031 | Rust | 否 | Rust, 命令守卫 | The Destructive Command Guard (dc… |
+| +340 | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | 40,225 | JavaScript | 是 | JavaScript, Claude Code, … | Marketing skills for Claude Code … |
+| +299 | [openinterpreter/openinterpreter](https://github.com/openinterpreter/openinterpreter) | 66,031 | Rust | 是 | Rust | A coding agent for low-cost models |
+| +172 | [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | 26,952 | Python | 是 | Python, 教育 Agent | DeepTutor: Lifelong Personalized … |
+| +110 | [moeru-ai/airi](https://github.com/moeru-ai/airi) | 42,769 | TypeScript | 是 | TypeScript, Grok, 自托管 | 💖🧸 Self hosted, you-owned Grok Co… |
+| +103 | [injaneity/pi-computer-use](https://github.com/injaneity/pi-computer-use) | 1,414 | TypeScript | 是 | TypeScript, Computer Use,… | Let Pi control your apps on MacOS… |
+| +38 | [YimMenu/YimMenuV2](https://github.com/YimMenu/YimMenuV2) | 1,514 | C++ | 否 | C++, 游戏模组 | Experimental menu for GTA 5: Enha… |
 
 **产品分析**：① AI 浓度 **~71%（10/14）**，比历史总榜 32% 还高 → AI 是当前最大增量；② 最热风向 = **Claude Code Skills 生态**（hallmark / mattpocock/skills / marketingskills）；③ 新涌现垂直 Agent（交易/教育/Computer-Use/伴侣）+ 衍生刚需（反 AI-slop、Agent 安全）；④ 与 56 总表仅 3 个重叠 → trending 反映当期新项目，与总榜(存量)互补。
 
@@ -211,12 +238,14 @@
 
 ---
 
-## 📋 全部项目元数据（56 个）
+## 📋 全部项目元数据（136 个）
 
-> 合并 `data/projects.csv`(curated 36) + Top-100 AI 子集(32)，去重 12 → **56**。每个项目一张完整元数据卡片见 [`reports/all-projects-metadata.md`](reports/all-projects-metadata.md)。
+> 以 `full_name` 为主键 **upsert（更新或插入）** 合并三个来源：`projects.csv`(curated) + `top-100-stars.csv` + `trending-daily.csv` → 共 **136 个**（56 合并 + 68 Top100非AI + 12 Trending新项目），其中 AI 相关 64 个。
+> 生成脚本：`python3 scripts/upsert_metadata.py` → `data/projects-metadata.csv`（幂等，重复运行只更新或插入，不清空已有字段）。
+> 每个项目一张完整元数据卡片见 [`reports/all-projects-metadata.md`](reports/all-projects-metadata.md)；Top-100 单独的完整卡片见 [`reports/top-100-metadata.md`](reports/top-100-metadata.md)。
 
 <details>
-<summary><b>📎 展开查看 56 个项目完整元数据宽表（按 Star 降序）</b></summary>
+<summary><b>📎 展开查看 56 个 AI 项目完整元数据宽表（含前后端/数据库/LLM，按 Star 降序）｜全部 136 个见 reports/all-projects-metadata.md</b></summary>
 
 | # | 项目 | ⭐ | 榜号 | 平台 | 主语言 | 前端 | 后端 | 数据库 | LLM | License | 技术栈 tags | 来源 |
 | :---: | :--- | ---: | :---: | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :---: |
@@ -287,31 +316,41 @@
 
 ```
 ai-github-projects-stats/
-├── README.md                       # 本文件（GitHub 风格：徽章/TOC/折叠/全量元数据）
+├── README.md                       # 本文件（GitHub 风格：徽章/TOC/折叠/全量元数据/Skill）
+├── .claude/skills/tech-selection/  # AI 技术选型 Skill
+│   └── SKILL.md
+├── scripts/
+│   └── upsert_metadata.py          # upsert 脚本(以 full_name 为主键更新或插入)
 ├── data/
 │   ├── source-top-100-stars.md     # Top-100 原始榜单存档
-│   ├── top-100-stars.csv           # Top-100 结构化(含 category)
+│   ├── top-100-stars.csv           # Top-100 结构化(含 category/ai_related/tags)
 │   ├── projects.csv                # 36 个 AI 项目技术选型
 │   ├── merged-ai-projects.csv      # 合并去重 56 个(含 tags/source/rank_top100)
-│   └── trending-daily.csv         # Trending 今日热榜(14 个)
+│   ├── trending-daily.csv         # Trending 今日热榜(14 个,含 ai_related/tags)
+│   └── projects-metadata.csv      # ✅ 规范化元数据存储(136 个,upsert 生成)
 └── reports/
     ├── summary.md                 # 36 个 AI 项目技术选型统计
     ├── merged-ai-projects.md      # 合并 56 个总表(含 tags 列)
     ├── trending-analysis.md       # Trending 今日热榜产品分析
-    └── all-projects-metadata.md   # 56 个项目完整元数据卡片(每项一张)
+    ├── top-100-metadata.md        # Top-100 完整元数据卡片(100 张)
+    └── all-projects-metadata.md   # 全部 136 个项目元数据卡片
 ```
 
 ## 📦 数据文件
 
 | 文件 | 说明 |
 | :--- | :--- |
-| [`data/merged-ai-projects.csv`](data/merged-ai-projects.csv) | 合并去重 56 个，19 字段（`tags`/`source`/`rank_top100`） |
-| [`reports/all-projects-metadata.md`](reports/all-projects-metadata.md) | **56 个项目完整元数据卡片**，每项一张（含 shields 徽章） |
+| [`data/projects-metadata.csv`](data/projects-metadata.csv) | ✅ **规范化元数据存储 136 个**，23 字段，upsert 生成（含 `tags`/`ai_related`/`rank_top100`/`trending_today`/`sources`） |
+| [`scripts/upsert_metadata.py`](scripts/upsert_metadata.py) | upsert 脚本：合并三来源为 `projects-metadata.csv`（幂等：更新或插入，不清空已有字段） |
+| [`.claude/skills/tech-selection/SKILL.md`](.claude/skills/tech-selection/SKILL.md) | 🧭 **AI 技术选型 Skill**：按项目描述 + 数据推荐栈 |
+| [`reports/all-projects-metadata.md`](reports/all-projects-metadata.md) | **136 个项目完整元数据卡片**，每项一张（含 shields 徽章） |
+| [`reports/top-100-metadata.md`](reports/top-100-metadata.md) | Top-100 完整元数据卡片（100 张） |
 | [`reports/merged-ai-projects.md`](reports/merged-ai-projects.md) | 合并 56 个总表（含技术栈 tags 列） |
-| [`data/trending-daily.csv`](data/trending-daily.csv) | Trending 今日热榜 14 个（今日新增/总 star/语言/描述） |
+| [`data/trending-daily.csv`](data/trending-daily.csv) | Trending 今日热榜 14 个（今日新增/总 star/语言/AI相关/tags） |
 | [`reports/trending-analysis.md`](reports/trending-analysis.md) | Trending 产品分析（AI 浓度/Skills 生态/垂直 Agent） |
 | [`reports/summary.md`](reports/summary.md) | 36 个 AI 项目选型统计 + 分布图表 + 选型建议 |
-| [`data/top-100-stars.csv`](data/top-100-stars.csv) | 全站历史总榜 Top-100（rank/stars/forks/language/category） |
+| [`data/top-100-stars.csv`](data/top-100-stars.csv) | 全站历史总榜 Top-100（rank/stars/forks/language/category/ai_related/tags） |
+| [`data/merged-ai-projects.csv`](data/merged-ai-projects.csv) | 合并去重 56 个，19 字段 |
 | [`data/projects.csv`](data/projects.csv) | 36 个 AI 项目 14 字段技术选型表 |
 
 ## 🗺️ 采集字段
@@ -344,7 +383,7 @@ ai-github-projects-stats/
 ## 🔧 采集流程
 
 1. 拉取 GitHub API（star/语言/协议/描述）与 Trending 页面 HTML
-2. 合并去重（`full_name`，llama.cpp 别名处理）
-3. 生成 `tags` 属性并汇总到 `data/merged-ai-projects.csv`
-4. 在 `reports/` 输出统计报告与全量元数据卡片
-5. README GitHub 风格展示（徽章 / TOC / 折叠 / 对齐表格）
+2. 各来源打 `tags` 与 `ai_related` 标注
+3. **upsert**：`python3 scripts/upsert_metadata.py` 以 `full_name` 为主键把三来源（projects/top-100/trending）更新或插入到 `data/projects-metadata.csv`（llama.cpp 别名处理；幂等不清空已有字段）
+4. 在 `reports/` 输出统计报告与全量元数据卡片（136 + 100）
+5. README GitHub 风格展示（徽章 / TOC / 折叠 / 对齐表格 / Skill 使用入口）
